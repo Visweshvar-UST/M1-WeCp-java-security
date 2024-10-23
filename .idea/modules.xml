@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/M1-Q.iml" filepath="$PROJECT_DIR$/.idea/M1-Q.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring 2 visweshvar.radhakrishnan@ust.com_code/Spring 2 visweshvar.radhakrishnan@ust.com_code.iml" filepath="$PROJECT_DIR$/Spring 2 visweshvar.radhakrishnan@ust.com_code/Spring 2 visweshvar.radhakrishnan@ust.com_code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring 1 visweshvar.radhakrishnan@ust.com_code/src/main/main.iml" filepath="$PROJECT_DIR$/Spring 1 visweshvar.radhakrishnan@ust.com_code/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring 1 visweshvar.radhakrishnan@ust.com_code/src/test/test.iml" filepath="$PROJECT_DIR$/Spring 1 visweshvar.radhakrishnan@ust.com_code/src/test/test.iml" />
+    </modules>
+  </component>
+</project>
