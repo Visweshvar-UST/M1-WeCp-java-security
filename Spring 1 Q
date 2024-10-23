@@ -1,0 +1,140 @@
+Develop a Spring Boot application for a library
+Problem Statement
+You are developing a Spring Boot application for a library. The library wants to maintain a record of the books and their authors. The relationship is such that a book can be written by only one author, but an author can write multiple books.
+
+
+
+The application must fulfill the following requirements:
+
+
+
+Entities:
+
+
+
+Author Entity:
+
+Attributes:
+
+: id: Unique identifier and should be auto generated. (type Long)
+
+: name: Name of the author. (type String)
+
+: books: List of books associated with the author. (type List<Book>)
+
+Relationship: OneToMany with Book.
+
+
+
+Book Entity:
+
+Attributes:
+
+: id: Unique identifier and should be auto generated. (type Long)
+
+: title: Title of the book. (type String)
+
+: genre: Genre of the book. (type String)
+
+: author: The author of the book. (type Author)
+
+Relationship: ManyToOne with Author.
+
+
+
+-> Generate constructors, getters, and setters for the entity classes as per standard Java conventions.
+
+-> For example: getId(), setId(Long id) etc.
+
+
+
+Repositories:
+
+AuthorRepository: Should extend JpaRepository.
+
+BookRepository: Should extend JpaRepository.
+
+
+
+Services:
+
+Implement AuthorService and BookService methods in AuthorServiceImpl and BookServiceImpl classes respectively.
+
+
+
+Controllers:
+
+
+
+AuthorController: Manages requests related to the Author:
+
+a. POST /authors: to add a new author.
+
+details: The API should accept a request body of type Author and return the created author.
+
+
+
+b. GET /authors/{id}: to fetch an author by its ID.
+
+details: The API should return the specified author details with the books associated with the author.
+
+
+
+c. GET /authors: to retrieve all authors.
+
+details: The API should return a list of all authors with the books associated with each author.
+
+
+
+BookController: Manages requests related to the Book:
+
+a. POST /books: to add a new book.
+
+details: The API should accept a request body of type Book and return the created book.
+
+
+
+b. GET /books/{id}: to fetch a book by its ID.
+
+details: The API should return the specified book details with the author associated with the book.
+
+
+
+c. GET /books: to retrieve all books.
+
+details: The API should return a list of all books with the author associated with each book.
+
+
+
+You need to implement the entities and Create and read methods in the AuthorServiceImpl and BookServiceImpl classes and the HTTP endpoints in the AuthorController and BookController classes.
+
+
+
+Your task is to complete the code in the following files:
+
+./src/main/java/com/wecreateproblems/onlinelibrary/entity/Author.java
+./src/main/java/com/wecreateproblems/onlinelibrary/entity/Book.java
+./src/main/java/com/wecreateproblems/onlinelibrary/repository/AuthorRepository.java
+./src/main/java/com/wecreateproblems/onlinelibrary/repository/BookRepository.java
+./src/main/java/com/wecreateproblems/onlinelibrary/service/BookServiceImpl.java
+./src/main/java/com/wecreateproblems/onlinelibrary/service/AuthorServiceImpl.java
+./src/main/java/com/wecreateproblems/onlinelibrary/controller/AuthorController.java
+./src/main/java/com/wecreateproblems/onlinelibrary/controller/BookController.java
+
+
+Testing and submitting the code:
+
+
+
+Step 1: Click on the WeCP Projects Button.
+
+
+
+Step 2: Click on the Test & Submit app button shown above to test your code and confirm if the application is working as expected.
+
+Step 3: Click on the Test & Submit app button to submit your code for evaluation. You will be given a congratulations message if your code is working perfectly.
+
+Step 4: Click on Run Java App to run the Java backend server.
+
+Step 5: You will be given a string URL on clicking the Show testing URL button. Append your API endpoints to the end of this string URL to test your API endpoints on Thunderclient. You can access Thunderclient by clicking the Thunderclient button.
+
